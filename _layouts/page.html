@@ -3,9 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-      {% include navigation.html %}
-    {{ content }}
+    <div class="page_container">
+      <div class="box header">
+        {% include navigation.html %}
+      </div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box content">
+        {{ content }}
+      </div>
+      <div class="box footer">
+        Footer
+      </div>
+    </div>
   </body>
 </html>
