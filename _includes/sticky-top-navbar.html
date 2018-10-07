@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navbar-custom">
+  <a class="navbar-brand" href="/">{{ site.title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      {% for item in site.data.navigation %}
+      <li {% if page.url==item.link %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+        <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
