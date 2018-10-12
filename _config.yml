@@ -23,5 +23,5 @@ permalink: :year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-toc

@@ -1,4 +1,23 @@
+$gStickyTopOffset: 70px;
+
 /* For sticky-top navbar */
 body {
-  padding-top: 70px;
+  padding-top: $gStickyTopOffset;
+}
+
+/* Offset ids -> jumping to them not alligned at top of page, which is hidden by stick-top navbar */
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -$gStickyTopOffset;
+  height: $gStickyTopOffset;
+  visibility: hidden;
+}
+
+.sticky-top-offset {
+  top: $gStickyTopOffset;
+}
+
+.info-box-links a {
+  background-color: red;
 }
