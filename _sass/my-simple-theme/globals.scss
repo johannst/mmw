@@ -1,11 +1,12 @@
 $gStickyTopOffset: 70px;
 
-/* For sticky-top navbar */
+/* Offset body due to fixed-top navbar */
 body {
   padding-top: $gStickyTopOffset;
+  padding-bottom: $gStickyTopOffset;
 }
 
-/* Offset ids -> jumping to them not alligned at top of page, which is hidden by stick-top navbar */
+/* Offset ids due to fixed-top navbar -> jumping to ids NOT alligned at top of page, which is hidden by fixed-top navbar */
 *[id]:before {
   display: block;
   content: " ";
@@ -14,10 +15,37 @@ body {
   visibility: hidden;
 }
 
+/* Offset sticky-navbar due to fixed-top mnavbar */
 .sticky-top-offset {
   top: $gStickyTopOffset;
 }
 
-.info-box-links a {
-  background-color: red;
+.blog-post {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1rem; }
+}
+
+table {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(176, 196, 222, 0.1);
+}
+ 
+.info-box {
+  padding: .5rem;
+  border-radius: .25rem;
+  border: 0.15rem solid lightgreen;
+  background-color: #f8f9fa;
 }

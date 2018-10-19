@@ -5,6 +5,7 @@ layout: page
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
+<div class="blog-post">
 {% if page.toc %}
 <div class="row">
     <div class="col-12 col-lg-4">
@@ -19,3 +20,4 @@ layout: page
 {% else %}
 {{ content }}
 {% endif %}
+</div>
