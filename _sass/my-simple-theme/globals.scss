@@ -20,6 +20,10 @@ body {
   top: $gStickyTopOffset;
 }
 
+.margin-bottom-top-offset {
+  margin-bottom: $gStickyTopOffset;
+}
+
 .blog-post {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
@@ -35,7 +39,7 @@ table {
 
 th, td {
   text-align: left;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-bottom: 0.1rem solid #e5e5e5;
 }
 
