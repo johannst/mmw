@@ -1,0 +1,12 @@
+<div class="row margin-bottom-top-offset">
+    <div class="col text-left">
+        {% if page.previous %}
+        <a href="{{ site.baseurl }}{{ page.previous.url }} " style="color: black;"">&laquo; {{ page.previous.title }}</a>
+        {% endif %}
+    </div>
+    <div class="col text-right">
+        {% if page.next %}
+        <a href="{{ site.baseurl }}{{ page.next.url }} " style="color: black;">{{ page.next.title }} &raquo;</a>
+        {% endif %}
+    </div>
+</div>
