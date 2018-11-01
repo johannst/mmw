@@ -47,37 +47,6 @@ tbody tr:nth-child(odd) {
   background-color: rgba(176, 196, 222, 0.1);
 }
 
-.conversation {
-  th, td {
-    padding: 0.2rem 0.5rem;
-  }
-  td:nth-child(odd) {
-    width: 25%;
-  }
-  @media(min-width:576px){
-    td:nth-child(odd) {
-      width: 20%;
-    }
-  }
-  @media(min-width:768px){
-    td:nth-child(odd) {
-      width: 15%;
-    }
-  }
-  //@media(min-width:992px){
-  //  td:nth-child(odd) {
-  //    width: 15%;
-  //    background: blue;
-  //  }
-  //}
-  //@media(min-width:1200px){
-  //  td:nth-child(odd) {
-  //    width: 15%;
-  //    background: red;
-  //  }
-  //}
-}
- 
 .info-box {
   padding: .5rem;
   border-radius: .25rem;

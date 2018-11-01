@@ -1,0 +1,21 @@
+.conversation {
+  th, td {
+    padding: 0.2rem 0.5rem;
+  }
+
+  td:nth-child(odd) {
+    width: 25%;
+  }
+
+  @media (min-width: 576px) {
+    td:nth-child(odd) {
+      width: 20%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    td:nth-child(odd) {
+      width: 15%;
+    }
+  }
+}
