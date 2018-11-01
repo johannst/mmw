@@ -21,6 +21,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: :year/:month/:day/:title/
 
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"
+      author: Johannes
+      toc: true
+
 # Build settings
 markdown: kramdown
 plugins:
