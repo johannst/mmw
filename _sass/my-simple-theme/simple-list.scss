@@ -1,0 +1,24 @@
+.simple-list {
+  ul {
+    padding-left: 1rem;
+    list-style-type: none;
+  }
+  
+  li a {
+    color: black;
+    display: block;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    /* invisible borders, allocate space for :hover border */
+    border-top: 0.1rem solid rgba(0, 0, 0, 0);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+  }
+
+  li a:hover {
+    text-decoration: none;
+    background-color: rgba(176, 196, 222, 0.1);
+    border-bottom: 0.1rem solid #e5e5e5;
+    border-top: 0.1rem solid #e5e5e5;
+  }
+}
