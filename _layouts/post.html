@@ -5,17 +5,19 @@ layout: page
 <div class="blog-post">
     {% if page.toc %}
     <div class="row">
-        <div class="col-12 col-lg-4">
-            <div class="sticky-top sticky-top-offset">
-                {{ content | toc_only }}
-            </div>
+        <div class="col-12 col-lg-3">
+            <nav class="simple-list sticky-top sticky-top-offset">
+            {{ content | toc_only }}
+            </nav>
         </div>
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-9">
+            <article class="px-2 py-2 px-md-4" style="box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);">
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
             {% include post-chain-navigator.html %}
             {{ content }}
             {% include post-chain-navigator.html %}
+        </article>
         </div>
     </div>
     {% else %}
