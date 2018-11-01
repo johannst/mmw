@@ -1,15 +1,25 @@
 ---
 layout: page
 ---
-<h1>Posts</h1>
 
-{% for post in site.posts %}
-<div class="card bg-light text-dark mb-2">
-  <div class="card-body">
-
-    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-    <p>{{ post.excerpt }}</p>
-
-  </div>
+<div class="simple-list px-2 px-md-5">
+  <ul style="padding-left: 0rem;">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <h3 class="text-center">{{ post.title }}</h3>
+          </div>
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="text-left">
+              {{ post.excerpt }}
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <hr style="margin-bottom: 0.5rem; margin-top: 0.5rem;">
+    {% endfor %}
+  </ul>
 </div>
-{% endfor %}
