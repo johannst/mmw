@@ -19,14 +19,22 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/chinese" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-      permalink: :year/:month/:day/:title/
+collections:
+  vocabularies:
+    output: true
 
 defaults:
   - scope:
       type: "posts"
     values:
+      permalink: :year/:month/:day/:title/
       layout: "post-lesson"
       author: Johannes
+      toc: true
+  - scope:
+      type: "vocabularies"
+    values:
+      layout: "post-vocabulary"
       toc: true
 
 # Build settings
