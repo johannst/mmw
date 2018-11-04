@@ -10,6 +10,16 @@
         <a class="nav-link" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
       </li>
       {% endfor %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Vocabulary
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {% for vocabulary in site.vocabularies %}
+          <a class="dropdown-item"  href="{{ site.baseurl }}{{ vocabulary.url }}">{{ vocabulary.titel }}</a>
+          {% endfor %}
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
