@@ -12,19 +12,11 @@ layout: page
         </div>
         <div class="col-12 col-lg-9">
             <article class="px-2 py-2 px-md-4" style="box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-            {% include post-chain-navigator.html %}
             {{ content }}
-            {% include post-chain-navigator.html %}
         </article>
         </div>
     </div>
     {% else %}
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-    {% include post-chain-navigator.html %}
     {{ content }}
-    {% include post-chain-navigator.html %}
     {% endif %}
 </div>
