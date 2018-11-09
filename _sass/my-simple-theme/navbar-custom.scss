@@ -4,10 +4,12 @@
   padding-bottom: 0.3rem;
 }
 
-.navbar-custom .nav-item .nav-link {
-  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
-}
-
-.navbar-custom .nav-item:hover .nav-link {
-  border-bottom: 0.2rem solid rgb(240, 168, 51);
+.navbar-custom {
+  .nav-item .nav-link, .dropdown-menu .dropdown-item {
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+  }
+  .nav-item:hover .nav-link, .dropdown-menu .dropdown-item:hover {
+    border-bottom: 0.2rem solid rgb(240, 168, 51);
+    background-color: inherit;
+  }  
 }
