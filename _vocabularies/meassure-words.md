@@ -21,3 +21,5 @@ titel: Meassure words
 | 些 | xiē    | indicating small amount or small number  |
 | 家 | jiā    | for buildings, businesses                |
 | 本 | běn    | books, files                             |
+| 遍 | biàn   | actions: one time                        |
+| 部 | bù     | for works of literature, films, machines |
