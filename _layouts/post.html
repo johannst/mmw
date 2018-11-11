@@ -5,15 +5,15 @@ layout: page
 <div class="blog-post">
     {% if page.toc %}
     <div class="row">
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-md-3 col-lg-2">
             <nav class="simple-list sticky-top sticky-top-offset">
             {{ content | toc_only }}
             </nav>
         </div>
-        <div class="col-12 col-lg-9">
-            <article class="px-2 py-2 px-md-4" style="box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);">
+        <div class="col-12 col-md-9 col-lg-10">
+            <article class="px-2 py-2 px-md-4">
             {{ content }}
-        </article>
+            </article>
         </div>
     </div>
     {% else %}

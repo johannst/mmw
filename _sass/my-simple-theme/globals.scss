@@ -28,6 +28,11 @@ body {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
   h3 { font-size: 1.3rem; }
+  article {
+    box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+  }
 }
 
 table {
@@ -44,7 +49,7 @@ th, td {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: rgba(176, 196, 222, 0.1);
+  background-color: #f6f8fa;
 }
 
 .info-box {
